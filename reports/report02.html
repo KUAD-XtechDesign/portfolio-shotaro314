@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- トップページとはリンクが変わるので注意 -->
+  <link rel="stylesheet" href="../css/style.css">
+  <title>レポート一覧ページ</title>
+</head>
+<body class="contents_page">
+  
+  <header>
+    <div class="inner">
+      <p id="header_logo">
+        <a href="../index.html"><img src="../images/logo.svg" alt=""></a>
+      </p>
+      <ul id="global_menu">
+        <!-- トップページとはリンクが変わるので注意 -->
+        <li><a href="../cv.html">cv</a></li>
+        <li><a href="../works/index.html">works</a></li>
+        <li class="current"><a href="./index.html">report</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section>
+
+    <div class="contents">
+      <div class="report">
+        <h1>Paiza.ioに関しての分析</h1>
+        
+        <div class="outline">
+          <div class="pic">
+            <img src="./images/thumb_paiza_io.png" alt="">
+          </div>
+          <div class="txt">
+            <p>概要</p>
+            <p>
+              Paiza.ioとは、webページ上でプログラムのデバッグが行えるサービスである。<br>
+              C言語やJava Scriptだけでなく、今人気のPythonも実験できるというすぐれものだ。<br>
+              特に、C言語は環境を整えるのがめんどくさい（実体験）なので、普段から活用させてもらっている。
+            </p>
+            <a class="ex_link" href="https://paiza.io/ja" target="_blank">https://paiza.io/ja</a>
+          </div>
+        </div>
+
+        <div class="mb_m">
+          <h3>動機</h3>
+          <p>
+            このページを分析しようと思った理由は至って単純だ。<br>
+            普段から使っているサービスのサイトが、どのようにして動いているのか気になったからである。<br>
+            特に、どのようにしてコードを実行しているのかがとても興味深かった。<br>
+            今回は、コードをどのように実行しているのかを分析していこうと思う。
+          </p>
+        </div>
+        <div class="mb_m">
+          <p>分析</p>
+          <p>
+            Webページ上でコーディング・実行・デバッグができる画期的なサービス。この仕組みから分析していこうと思う。<br>
+            まず、Paiza.ioのいいところは、先程も述べたがプログラミングの際にネックになる環境構築の面倒くささを省略することができるということである。<br>
+            調べてみると、利用者の端末上で端末上で書かれたコードは、サーバーに送られ、サーバー上のdockerという仮想化環境において実行されているということがわかった。<br>
+            ただひとつ、欠点を挙げるとするならば、web上で動いているだけあって、オンライン環境でないと実行することが出来ず、オフライン環境においては実行することが出来ないということである。<br>
+            この点は、各々のコンピューターで実行できるIDE(統合開発環境)には劣るものであろう。<br>
+            だが、オンラインでないと出来ないとはいえ、環境を整えなくても実行できるということにおいてはとてつもなく便利なのは間違いない。
+          </p>
+        </div>
+
+        <div class="mb_m">
+          <h3>参考</h3>
+          <a class="ex_link" href="https://blog.xin9le.net/entry/2015/03/01/001450" target="_blank">paiza.IOの実行環境を覗き見る方法4選</a>
+          <br>
+          <a class="ex_link" href="https://ja.wikipedia.org/wiki/Docker" target="_blank">Dockerとは-Wikipedia</a>
+        </div>
+
+
+        
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    ©︎ Copyright 2021 KUA-Ichikawa.Inc
+  </footer>
+
+
+</body>
+</html>
