@@ -23,7 +23,9 @@ body {
 body {
   font-size: 1.6rem;
   line-height: 1.6;
-  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+  /*font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+  */
+  font-family: 'M PLUS Rounded 1c', sans-serif;
   color: #333333;
   letter-spacing: 0.05em;
 }
@@ -35,6 +37,11 @@ body.contents_page {
 a {
   color: inherit;
   transition: 0.3s opacity;
+}
+
+p{
+  line-height: 1.7;
+  text-align: justify;
 }
 
 a:hover {
@@ -105,7 +112,9 @@ footer {
 コンテンツ
 ======================================================*/
 #header_logo img {
-  display: block;
+  /*display: block;*/
+  height: 30px;
+  width: 200px;
 }
 
 #global_menu {
@@ -135,10 +144,10 @@ footer {
 
 .top_eye_catch {
   height: 500px;
-  background-image: url(../images/top.jpg);
+  background-image: url(../images/background.jpg);
   background-size: cover;
   background-position: center center;
-  background-attachment: fixed;
+  background-attachment: fixe;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -148,7 +157,7 @@ footer {
 
 .report_eye_catch {
   height: 300px;
-  background-image: url(../images/report.jpg);
+  background-image: url(../images/works_pic.png);
   background-size: cover;
   background-position: center center;
   display: flex;
@@ -163,6 +172,13 @@ footer {
   min-height: 600px;
   padding: 20px;
   margin: auto;
+}
+
+.portrait {
+  /*width:500px;
+  height:500px;*/
+  width:50%;
+  text-align: right;
 }
 
 .thumb_list {
